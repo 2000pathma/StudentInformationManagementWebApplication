@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Management System</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+        
+    </head>
+    <body class="container bg-black m-5 ">
+        
+        <div class="container row text-primary">
+            <h1 class="container m-4">STUDENT INFORMATION MANAGEMENT SYSTEM</h1>
+        <div class="container col bg-warning text-white p-3 m-5">
+                <label class="form-label ">Student Name</label>
+                <input type="text" name="name" class="form-control" id="name">
+                <label class="form-label">Student DOB</label>
+                <input type="date" name="dob" class="form-control" id="dob">
+                <label class="form-label">Student Age</label>
+                <input type="number" name="age"  class="form-control" id="age">
+                <label class="form-label">Student City</label>
+                <input type="text" name="city" class="form-control" id="city">
+                <label class="form-label">Student Mark</label>
+                <input type="text" name="salary" class="form-control" id="salary">
+                <button class="btn btn-primary btn-lg m-4" onclick="addHtmlTableRow()" >Insert Record</button>
+                <button class="btn btn-primary btn-lg m-4" onclick="addData()">Store Data</button>
+                <button class="btn btn-success btn-lg m-4" onclick="editHtmlTbleSelectedRow()">Update Record</button>
+                <button class="btn btn-success btn-lg m-4" onclick="readData()">Read Data</button>
+                <button class="btn btn-danger btn-lg m-4" onclick="removeSelectedRow()">Delete Record</button>
+                <button class="btn btn-danger btn-lg m-4" onclick="clearData()">Delete Data</button>
+               
+        </div>
+        <div class="container col m-5 p-1">
+                <table id="table" class="table table-striped bg-info">
+                    <tr class="bg-success">
+                        <th>Name</th>
+                        <th>DOB</th>
+                        <th>Age</th>
+                        <th>City</th>
+                        <th>Marks</th>
+                    </tr>
+                <tbody id="tbody">
+
+                </tbody>
+                </table>
+        </div>  
+    </div>
+    <script src="ems.js"></script>
+
+    </body>
+</html>
